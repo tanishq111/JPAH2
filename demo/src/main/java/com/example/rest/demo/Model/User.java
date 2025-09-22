@@ -13,6 +13,7 @@ public class User {
     private Long id;
     private String name;
     private String email;
+    private Boolean isAdmin;
 
         public Long getId() {
             return id;
@@ -36,5 +37,13 @@ public class User {
 
         public void setEmail(String email) {
             this.email = email;
+        }
+
+        public void setAdmin(Boolean admin){
+            this.admin = admin;
+        }
+
+        public Boolean getAdmin(){
+            return this.isAdmin;
         }
 }
